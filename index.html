@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  body {
+  margin: 20px 40px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 16px;
+}
+
+/*--- This is the CSS class for the green rectangular blocks. Note that it uses display: flex ---*/
+.wrapper {
+  display: flex;
+  height: 60px;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+.wrapper1 {
+  display: flex;
+  height: 60px;
+  justify-content: space-between ;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+.wrapper3 {
+  display: flex;
+  height: 60px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+}
+.wrapper6{
+  display: flex;
+  height: 60px;
+  margin-bottom: 20px;
+  justify-content: center;
+  background-color: red;
+}
+.wrapper7 {
+  display: flex;
+  height: 60px;
+  margin-bottom: 20px;
+  align-items: center;
+  background-color: blue;
+}
+.wrapper8 {
+  display: flex;
+  height: 60px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  background-color: green;
+}
+.wrapper9 {
+  display: flex;
+  height: 60px;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+  background-color: orange;
+}
+/*--- flex: 1 makes it so that the div takes up all available space left in the parent element ---*/
+.redExample {
+  flex: 1;
+  background-color: red;
+}
+
+/*--- Since both .redExample and .blueExample have flex: 1, they will take up an equal amount of space because they meet in the middle ---*/
+.blueExample {
+  flex: 1;
+  background-color: blue;
+}
+
+/*--- flex-direction: row-reverse orders all child elements starting from right to left ---*/
+.emptyExample2 {
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+}
+
+.blueExample2 {
+  width: 80px;
+  background-color: blue;
+} 
+
+.red3 {
+  display: flex;
+  width: 80px;
+  height: 100%;
+  background-color: red;
+}
+.red-background {
+  display: flex;
+  flex: 1;
+  background-color: red;
+}
+.mini-red-cube{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  background-color: red; 
+}
+.green-line {
+  display: flex;
+  flex: 1;
+  height: 20px;
+  background-color: green;
+}
+.yellow-cubes {
+  height: 60px;
+  width: 60px;
+  background-color: orange;
+}
+.thin-green-lines {
+  height: 60px;
+  width: 20px;
+  background-color: green;
+}
+/* TODO: Add CSS for the rest of your solution below */
+  </style>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <p>Assignment 1</p>
+    <p>Provided Examples</p>
+    <p>Row 1</p>
+    <div class="wrapper">
+      <div class="redExample"></div>
+      <div class="blueExample"></div>
+    </div>
+    <p>Row 2</p>
+    <div class="wrapper">
+      <div class="emptyExample2">
+        <div class="blueExample2"></div>
+      </div>
+    </div>
+    <!-- TODO: Insert div elements in the next 7 wrappers for your solution -->
+    <p>Student TODOs</p>
+    <p>Row 3</p>
+    <div class="wrapper1">
+        <div class="red3"></div>
+        <div class="blueExample2"></div>
+      </div>
+      </div>
+    <p>Row 4</p>
+    <div class="wrapper">
+    	<div class="red-background"></div>
+    	<div class="blueExample2"></div>
+    </div>
+    <p>Row 5</p>
+    <div class="wrapper3">
+    	<div class="mini-red-cube"></div>
+    </div>
+    <p>Row 6</p>
+    <div class="wrapper6">
+      <div class="blueExample2" ></div>
+    </div>
+    <p>Row 7</p>
+    <div class="wrapper7">
+      <div class="red3"></div>
+      <div class="green-line"></div>
+    </div>
+    <p>Row 8</p>
+    <div class="wrapper8">
+    <div class="yellow-cubes"></div>
+    <div class="yellow-cubes"></div>
+    <div class="yellow-cubes"></div>
+    <div class="yellow-cubes"></div>
+    <div class="yellow-cubes"></div>
+    </div>
+    <p>Row 9</p>
+    <div class="wrapper9">
+      <div class="thin-green-lines"></div>
+      <div class="thin-green-lines"></div>
+      <div class="thin-green-lines"></div>
+      <div class="thin-green-lines"></div>
+    </div>
+  </body>
+</html>
